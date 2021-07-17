@@ -18,3 +18,24 @@ const phenylMongoDbClient = new PhenylMongoDbClient(connection)
 await phenylMongoDbClient.insertAndGet({ entityName: "user", value: { id: "user" } })
 const { entity: user } = phenylMongoDbClient.get({ entityName: "user", id: "user" })
 ```
+
+## API Documentation
+
+- createEntityClient
+- createPhenylClients
+
+### createEntityClient
+
+Create Entity Client with mongodb.
+
+```ts
+const entityClient = createEntityClient()
+```
+
+### createPhenylClients
+
+Create Entity Client and Session Client with mongodb.
+
+```ts
+const { entityClient, sessionClient } = createPhenylClients()
+```
