@@ -1604,6 +1604,39 @@
   dependencies:
     mkdirp "^1.0.4"
 
+"@phenyl/http-client@^4.0.3":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@phenyl/http-client/-/http-client-4.0.3.tgz#f420c6d185ab85adf352316a5eb3461c531b3b6b"
+  integrity sha512-C0ICCViNZMt9xvRjZGjQcfodTkBEffoGc1NiNX3FXo3cwnIy4b7dcqGpmXIgw/j7hwNMPJ5tW7YEG5X3l0GI2Q==
+  dependencies:
+    "@phenyl/http-rules" "^4.0.3"
+    "@phenyl/interfaces" "^4.0.3"
+    "@phenyl/utils" "^4.0.3"
+    cross-fetch "^3.0.2"
+
+"@phenyl/http-rules@^4.0.3":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@phenyl/http-rules/-/http-rules-4.0.3.tgz#406b2132847cc0d1b66c08cf562a778110b2f9dd"
+  integrity sha512-IFCXzjozqqeQxnBZF/1yUO0vuCoH9CwVMaythpzfSDSh9SVuVvNtEW1y8gi89+OIeTY12gr6vWbFwyy97wPUnw==
+  dependencies:
+    "@phenyl/interfaces" "^4.0.3"
+    "@phenyl/utils" "^4.0.3"
+
+"@phenyl/interfaces@^4.0.3":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@phenyl/interfaces/-/interfaces-4.0.3.tgz#de1bbc6203764a906f461c6b880e81d48612a58b"
+  integrity sha512-u/p5jfBbMqhBjPkbA8XgELd2EGWjEZ9tcw15W41i9c90wigyPoqCSYMthxmzHl5Fu0PPYQV7I40pecj1kdiYJg==
+  dependencies:
+    sp2 "^1.6.3"
+
+"@phenyl/utils@^4.0.3":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@phenyl/utils/-/utils-4.0.3.tgz#1bf8c8df3f5f00c27b674038c30a5ffa5e822b28"
+  integrity sha512-vrKXS2YrebnSrctFRPwNl5lWucsnK1NWSyNF8WOkMTcy4JNdba7ZVgIN1BJV/DTce1aJGqdOTdTn0MCl0A8nRg==
+  dependencies:
+    "@phenyl/interfaces" "^4.0.3"
+    sp2 "^1.6.3"
+
 "@pmmmwh/react-refresh-webpack-plugin@0.4.3":
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/@pmmmwh/react-refresh-webpack-plugin/-/react-refresh-webpack-plugin-0.4.3.tgz#1eec460596d200c0236bf195b078a5d1df89b766"
@@ -1670,6 +1703,28 @@
   integrity sha512-MZPUxrmFubI36XS1DI3qmI0YdN1gks62JtFZvxR67ljjSNCeK6U08Zx4msEWOXuofgqUt6zPHSi1H9fbjR/NRA==
   dependencies:
     "@sinonjs/commons" "^1.7.0"
+
+"@sp2/format@^1.6.3":
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/@sp2/format/-/format-1.6.3.tgz#45d194c7bb17ac9f4eb943902dc58780aa9ff6d3"
+  integrity sha512-Q9rnIIB/YbJ8HV1mw9qA44FRK9GsTwM3cnc6Fj6eg6lRNKMQmnGh96DxcQin12PqftIeEgAKZxR13m3KSQJqlw==
+
+"@sp2/retriever@^1.6.3":
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/@sp2/retriever/-/retriever-1.6.3.tgz#cdd240b3f12ddd67c410139dea7dbc172c22df2d"
+  integrity sha512-w6lAgRkgpuDSUbytwLRPdVGq6zbthD2zXWXSttv9baDdb6RcMFj1anESywwIT2IVWmWj3B6lh1x2aivwAWRaAw==
+  dependencies:
+    "@sp2/format" "^1.6.3"
+    fast-deep-equal "^3.0.0"
+
+"@sp2/updater@^1.6.3":
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/@sp2/updater/-/updater-1.6.3.tgz#55563bfb5993aad4abc2659040ab9e90d2539d7d"
+  integrity sha512-bPtD9/RaZxX9LyWrsJFRMJd8UoVuBBqHORCbyPVV9eYhZuyt9ws7OWoWtK/BHWhBdijVr8j3w5zbb0bNKOroDg==
+  dependencies:
+    "@sp2/format" "^1.6.3"
+    "@sp2/retriever" "^1.6.3"
+    fast-deep-equal "^3.0.0"
 
 "@surma/rollup-plugin-off-main-thread@^1.1.1":
   version "1.4.2"
@@ -3590,18 +3645,10 @@ color-name@^1.0.0, color-name@~1.1.4:
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
-color-string@^1.5.2:
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/color-string/-/color-string-1.5.3.tgz#c9bbc5f01b58b5492f3d6857459cb6590ce204cc"
-  integrity sha512-dC2C5qeWoYkxki5UAXapdjqO672AM4vZuPGRQfO8b5HKuKGBbKWpITyDYN7TOFKvRW7kOgAn3746clDBMDJyQw==
-  dependencies:
-    color-name "^1.0.0"
-    simple-swizzle "^0.2.2"
-
-color-string@^1.5.4:
-  version "1.5.4"
-  resolved "https://registry.yarnpkg.com/color-string/-/color-string-1.5.4.tgz#dd51cd25cfee953d138fe4002372cc3d0e504cb6"
-  integrity sha512-57yF5yt8Xa3czSEW1jfQDE79Idk0+AkN/4KWad6tbdxUmAs3MvjxlWSWD4deYytcRfoZ9nhKyFl1kj5tBvidbw==
+color-string@^1.5.2, color-string@^1.5.4:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/color-string/-/color-string-1.6.0.tgz#c3915f61fe267672cb7e1e064c9d692219f6c312"
+  integrity sha512-c/hGS+kRWJutUBEngKKmk4iH3sD59MBkoxVapS/0wgpCz2u7XsNloxknyvBhzwEs1IbV36D9PwqLPJ2DTu3vMA==
   dependencies:
     color-name "^1.0.0"
     simple-swizzle "^0.2.2"
@@ -3872,6 +3919,13 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     ripemd160 "^2.0.0"
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
+
+cross-fetch@^3.0.2:
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.4.tgz#9723f3a3a247bf8b89039f3a380a9244e8fa2f39"
+  integrity sha512-1eAtFWdIubi6T4XPy6ei9iUFoKpUkIF971QLN8lIvvvwueI65+Nw5haMNKUwfJxabqlIIDODJKGrQ66gxC0PbQ==
+  dependencies:
+    node-fetch "2.6.1"
 
 cross-spawn@7.0.3, cross-spawn@^7.0.0, cross-spawn@^7.0.2:
   version "7.0.3"
@@ -5273,7 +5327,7 @@ fast-deep-equal@^2.0.1:
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-2.0.1.tgz#7b05218ddf9667bf7f370bf7fdb2cb15fdd0aa49"
   integrity sha1-ewUhjd+WZ79/Nwv3/bLLFf3Qqkk=
 
-fast-deep-equal@^3.1.1:
+fast-deep-equal@^3.0.0, fast-deep-equal@^3.1.1:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
   integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
@@ -8017,6 +8071,11 @@ no-case@^2.2.0:
   integrity sha512-rmTZ9kz+f3rCvK2TD1Ue/oZlns7OGoIWP4fc3llxxRXlOkHKoWPPWJOfFYpITabSow43QJbRIoHQXtt10VldyQ==
   dependencies:
     lower-case "^1.1.1"
+
+node-fetch@2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
+  integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
 
 node-forge@^0.10.0:
   version "0.10.0"
@@ -10914,6 +10973,15 @@ sourcemap-codec@^1.4.4:
   version "1.4.8"
   resolved "https://registry.yarnpkg.com/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz#ea804bd94857402e6992d05a38ef1ae35a9ab4c4"
   integrity sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==
+
+sp2@^1.6.3:
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/sp2/-/sp2-1.6.3.tgz#e14ad592a8365ca726e0be225ba83c78416c5d14"
+  integrity sha512-fIdy0gc2pko2M+2kDmTPblA0Az3eSA4qkuKtKaC66z9iUu0VHX1WiuuQMdYrgSNgKZqvOEX/oMZB6sUTnPkOLg==
+  dependencies:
+    "@sp2/format" "^1.6.3"
+    "@sp2/retriever" "^1.6.3"
+    "@sp2/updater" "^1.6.3"
 
 spdx-correct@^3.0.0:
   version "3.1.0"
